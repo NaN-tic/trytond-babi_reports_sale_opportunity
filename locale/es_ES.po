@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
@@ -18,6 +18,10 @@ msgctxt "model:babi.expression,name:sale_opportunity_day_closed"
 msgid "Day End Date"
 msgstr "Día fecha fin"
 
+msgctxt "model:babi.expression,name:sale_opportunity_day_opened"
+msgid "Day Start Date"
+msgstr "Fecha inicio día"
+
 msgctxt "model:babi.expression,name:sale_opportunity_id"
 msgid "ID"
 msgstr "Identificador"
@@ -25,6 +29,10 @@ msgstr "Identificador"
 msgctxt "model:babi.expression,name:sale_opportunity_month_closed"
 msgid "Month End Date"
 msgstr "Mes fecha fin"
+
+msgctxt "model:babi.expression,name:sale_opportunity_month_opened"
+msgid "Month Start Date"
+msgstr "Fecha inicio mes"
 
 msgctxt "model:babi.expression,name:sale_opportunity_name"
 msgid "Name"
@@ -50,17 +58,33 @@ msgctxt "model:babi.expression,name:sale_opportunity_week_closed"
 msgid "Week End Date"
 msgstr "Semana fin fecha"
 
+msgctxt "model:babi.expression,name:sale_opportunity_week_opened"
+msgid "Week Start Date"
+msgstr "Fecha inicio semana"
+
 msgctxt "model:babi.expression,name:sale_opportunity_year_closed"
 msgid "Year End Date"
 msgstr "Año fecha fin"
+
+msgctxt "model:babi.expression,name:sale_opportunity_year_opened"
+msgid "Year Start Date"
+msgstr "Fecha inicio año"
 
 msgctxt "model:babi.expression,name:sale_opportunity_yearmonth_closed"
 msgid "Year-Month End Date"
 msgstr "Año-Mes fecha fin"
 
+msgctxt "model:babi.expression,name:sale_opportunity_yearmonth_opened"
+msgid "Year-Month Start Date"
+msgstr "Fecha inicio año-mes"
+
 msgctxt "model:babi.expression,name:sale_opportunity_yearmonthday_closed"
 msgid "Date End Date"
 msgstr "Fecha fin"
+
+msgctxt "model:babi.expression,name:sale_opportunity_yearmonthday_opened"
+msgid "Date Start Date"
+msgstr "Fecha inicio"
 
 msgctxt "model:babi.expression,name:sale_opportunity_zip"
 msgid "Zip"
