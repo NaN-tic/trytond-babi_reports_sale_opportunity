@@ -3,11 +3,11 @@
 from trytond.pool import PoolMeta
 
 __all__ = ['Model']
-__metaclass__ = PoolMeta
 
 
 class Model:
     __name__ = 'ir.model'
+    __metaclass__ = PoolMeta
 
     @classmethod
     def __register__(cls, module_name):
