@@ -24,7 +24,7 @@ msgstr "Fecha inicio día"
 
 msgctxt "model:babi.expression,name:sale_opportunity_id"
 msgid "ID"
-msgstr "Identificador"
+msgstr "ID"
 
 msgctxt "model:babi.expression,name:sale_opportunity_month_closed"
 msgid "Month End Date"
