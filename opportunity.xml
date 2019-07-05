@@ -190,21 +190,21 @@
             <field name="report" ref="opportunity_yearclosed_origin"/>
             <field name="expression" ref="sale_opportunity_year_closed"/>
             <field name="name">Year Closed</field>
-            <field name="sequence">1</field>
+            <field name="sequence" eval="1"/>
         </record>
         <record model="babi.measure" id="opportunity_yearclosed_origin_">
             <field name="report" ref="opportunity_yearclosed_origin"/>
             <field name="expression" ref="sale_opportunity_id"/>
             <field name="name">Opportunities</field>
             <field name="aggregate">count</field>
-            <field name="sequence">1</field>
+            <field name="sequence" eval="1"/>
         </record>
         <record model="babi.measure" id="opportunity_yearclosed_origin__planned_revenue">
             <field name="report" ref="opportunity_yearclosed_origin"/>
             <field name="expression" ref="sale_opportunity_planned_revenue"/>
             <field name="name">Excpected Revenue</field>
             <field name="aggregate">sum</field>
-            <field name="sequence">2</field>
+            <field name="sequence" eval="2"/>
         </record>
     </data>
 </tryton>
