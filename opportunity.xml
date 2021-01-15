@@ -159,8 +159,8 @@
         <record model="babi.expression" id="sale_opportunity_state_name">
             <field name="ttype">char</field>
             <field name="model" search="[('model','=','sale.opportunity')]"/>
-            <field name="expression">o.party and o.party.addresses[0].subdivision.rec_name</field>
-            <field name="name">State/Region</field>
+            <field name="expression">o.party and o.party.addresses and o.party.addresses[0].subdivision and o.party.addresses[0].subdivision.rec_name</field>
+            <field name="name">Subdivision</field>
         </record>
         <record model="babi.expression" id="sale_opportunity_country_name">
             <field name="ttype">char</field>
