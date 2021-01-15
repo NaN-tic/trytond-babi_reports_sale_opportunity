@@ -147,13 +147,13 @@
         <record model="babi.expression" id="sale_opportunity_city">
             <field name="ttype">char</field>
             <field name="model" search="[('model','=','sale.opportunity')]"/>
-            <field name="expression">o.party and o.party.addresses[0].city</field>
+            <field name="expression">o.party and o.party.addresses and o.party.addresses[0].city</field>
             <field name="name">City</field>
         </record>
         <record model="babi.expression" id="sale_opportunity_zip">
             <field name="ttype">char</field>
             <field name="model" search="[('model','=','sale.opportunity')]"/>
-            <field name="expression">o.party and o.party.addresses[0].zip</field>
+            <field name="expression">o.party and o.party.addresses and o.party.addresses[0].zip</field>
             <field name="name">Zip</field>
         </record>
         <record model="babi.expression" id="sale_opportunity_state_name">
@@ -165,7 +165,7 @@
         <record model="babi.expression" id="sale_opportunity_country_name">
             <field name="ttype">char</field>
             <field name="model" search="[('model','=','sale.opportunity')]"/>
-            <field name="expression">o.party and o.party.addresses[0].country.rec_name</field>
+            <field name="expression">o.party and o.party.addresses and o.party.addresses[0].country and o.party.addresses[0].country.rec_name</field>
             <field name="name">Country</field>
         </record>
 
