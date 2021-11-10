@@ -2,7 +2,7 @@
 <!-- The COPYRIGHT file at the top level of this repository contains the full
      copyright notices and license terms. -->
 <tryton>
-    <data noupdate="0">
+    <data grouped="1">
         <!-- Filters -->
         <!-- Opportunities -->
         <record model="babi.filter" id="all_opportunities">
@@ -208,4 +208,3 @@
         </record>
     </data>
 </tryton>
-
