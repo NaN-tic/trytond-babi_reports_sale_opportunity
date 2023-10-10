@@ -129,7 +129,7 @@
         <record model="babi.expression" id="sale_opportunity_probability">
             <field name="ttype">float</field>
             <field name="model" search="[('model','=','sale.opportunity')]"/>
-            <field name="expression">o.probability</field>
+            <field name="expression">o.conversion_probability</field>
             <field name="name">Probability</field>
         </record>
         <record model="babi.expression" id="sale_opportunity_planned_revenue">
