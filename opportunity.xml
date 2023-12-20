@@ -141,7 +141,7 @@
         <record model="babi.expression" id="sale_opportunity_user">
             <field name="ttype">char</field>
             <field name="model" search="[('model','=','sale.opportunity')]"/>
-            <field name="expression">o.employee.rec_name</field>
+            <field name="expression">o.employee and o.employee.rec_name</field>
             <field name="name">Employee</field>
         </record>
         <record model="babi.expression" id="sale_opportunity_city">
