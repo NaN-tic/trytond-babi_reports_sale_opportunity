@@ -168,43 +168,5 @@
             <field name="expression">o.party and o.party.addresses and o.party.addresses[0].country and o.party.addresses[0].country.rec_name</field>
             <field name="name">Country</field>
         </record>
-
-        <!--
-            Reports
-        -->
-        <!-- sale.opportunity -->
-        <!-- Year Closed - Origin | Count -->
-        <record model="babi.report" id="opportunity_yearclosed_origin">
-            <field name="parent_menu" ref="babi.menu_babi"/>
-            <field name="model" search="[('model','=','sale.opportunity')]"/>
-            <field name="filter" ref="all_opportunities"/>
-            <field name="name">Opportunities: Year Closed</field>
-            <field name="timeout" eval="1200"/>
-        </record>
-        <record model="babi.report-res.group"
-                id="opportunity_yearclosed_origin_group_babi_">
-            <field name="report" ref="opportunity_yearclosed_origin"/>
-            <field name="group" ref="babi.group_babi"/>
-        </record>
-        <record model="babi.dimension" id="opportunity_yearclosed_origin__yearclosed">
-            <field name="report" ref="opportunity_yearclosed_origin"/>
-            <field name="expression" ref="sale_opportunity_year_closed"/>
-            <field name="name">Year Closed</field>
-            <field name="sequence" eval="1"/>
-        </record>
-        <record model="babi.measure" id="opportunity_yearclosed_origin_">
-            <field name="report" ref="opportunity_yearclosed_origin"/>
-            <field name="expression" ref="sale_opportunity_id"/>
-            <field name="name">Opportunities</field>
-            <field name="aggregate">count</field>
-            <field name="sequence" eval="1"/>
-        </record>
-        <record model="babi.measure" id="opportunity_yearclosed_origin__planned_revenue">
-            <field name="report" ref="opportunity_yearclosed_origin"/>
-            <field name="expression" ref="sale_opportunity_planned_revenue"/>
-            <field name="name">Excpected Revenue</field>
-            <field name="aggregate">sum</field>
-            <field name="sequence" eval="2"/>
-        </record>
     </data>
 </tryton>
